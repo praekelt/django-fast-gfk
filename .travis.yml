@@ -1,0 +1,12 @@
+language: python
+
+python:
+  - "2.7"
+
+env:
+  - TOXENV=django111
+
+install:
+  - pip install tox
+
+script: tox -e $TOXENV
