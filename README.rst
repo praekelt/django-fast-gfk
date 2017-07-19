@@ -21,4 +21,13 @@ Installation
 
 1. Install or add ``django-fast-gfk`` to your Python path.
 
+Usage
+-----
+
+The ``fetch`` function returns a generator with the generic foreign key prefetched. Parameter
+``field`` is the name of the generic foreign key.::
+
+    from fast_gfk import fetch
+
+    fetch(Bar.objects.all(), field="target"))
 
